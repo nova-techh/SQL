@@ -1,0 +1,27 @@
+--- create a grocery store database
+CREATE TABLE book_store (id INTEGER PRIMARY KEY, name TEXT, in_stock INTEGER, aisle INTEGER, price INTEGER);
+
+INSERT INTO book_store VALUES (1, "Twilight", 10, 12, 20.00);
+INSERT INTO book_store VALUES (2, "Dracula", 20, 4, 15.00);
+INSERT INTO book_store VALUES (3, "Wild Ones", 5, 3, 20.00);
+INSERT INTO book_store VALUES (4, "Dune", 3, 1, 14.00);
+INSERT INTO book_store VALUES (5, "Hunger Games", 15, 1, 30.00);
+INSERT INTO book_store VALUES (6, "Fangirl", 1, 21, 10.00);
+INSERT INTO book_store VALUES (7, "It", 3, 3, 20.00);
+INSERT INTO book_store VALUES (8, "The Shining", 2, 3, 17.00);
+INSERT INTO book_Store VALUES (9, "Call of the Wild", 1, 1, 10.00);
+INSERT INTO book_store VALUES (10, "Green Witch", 5, 6, 15.00);
+INSERT INTO book_store VALUES (11, "Skeleton Run", 7, 2, 10.00);
+INSERT INTO book_store VALUES (12, "Halloweentown", 1, 2, 15.00);
+INSERT INTO book_store VALUES (13, "Corpse", 2, 10, 40.00);
+INSERT INTO book_Store VALUES (14, "Asylum", 7, 4, 17.00);
+INSERT INTO book_store VALUES (15, "Run", 1, 1, 10.00);
+
+--- display the database ordered by price 
+SELECT price FROM book_store ORDER BY price;
+
+--- what is the sum of books in stock?
+SELECT sum(in_stock) FROM book_store;
+
+--- what is the average number of books in stock?
+SELECT avg(in_stock) FROM book_store;
